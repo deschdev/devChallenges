@@ -1,0 +1,93 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --dark-purple: #883AE1;
+  --light-purple: #E6D6FC;
+  --gray: #E5EAf0;
+  --dark-gray: #6C727F;
+  --dark-white: #FAFAF9;
+  --white: #FFFFFF;
+  --slate-blue: #20293A;
+
+  --font: "Sora", sans-serif;
+  --marginSixteen: 16px;
+}
+
+html {
+  font-family: var(--font);
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--dark-white);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+section {
+  width: 100%;
+  max-width: 375px;
+  height: 390px;
+  margin: 30vh auto;
+  border: 1px solid var(--gray);
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(17, 23, 41, 0.2);
+}
+
+.contentContainer img {
+  padding: 16px;
+  border-radius: 30px;
+}
+
+.contentContainer .pill {
+  margin-left: 16px;
+  margin-bottom: 0;
+  padding: 4px 12px;
+  border-radius: 20px;
+  background: var(--light-purple);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--dark-purple);
+}
+
+.contentContainer h2 {
+  margin: var(--marginSixteen);
+  margin-top: 16px;
+  margin-bottom: 6px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--slate-blue);
+}
+
+.contentContainer p {
+  margin: var(--marginSixteen);
+  margin-top: 0;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: var(--dark-gray)
+}
+
+.contentContainer hr {
+  background-color: var(--gray);
+  height: 1px;
+  border: 0;
+}
+
+.contentContainer span:last-of-type {
+  display: block;
+  margin: var(--marginSixteen);
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--dark-gray);
+}
