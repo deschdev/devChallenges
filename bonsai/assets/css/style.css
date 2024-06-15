@@ -63,6 +63,12 @@ header {
   color: var(--green);
 }
 
+header i,
+header .bx.bx-menu.bx-lg {
+  display: none;
+}
+
+header nav,
 header nav ul,
 .login-container ul {
   display: inline-flex;
@@ -263,6 +269,7 @@ main {
 
 .card .price-per-month span {
   display: block;
+  color: var(--gray)
 }
 
 .card .price-per-month span:not(strong) {
@@ -472,6 +479,7 @@ footer {
   margin-bottom: 40px;
   font-family: var(--body-font);
   font-size: 1.7rem;
+  color: var(--gray);
 }
 
 .footer-middle-two h2 {
@@ -487,6 +495,7 @@ footer {
   margin-bottom: 14px;
   font-family: var(--body-font);
   font-size: 1.6rem;
+  color: var(--gray);
   cursor: pointer;
 }
 
@@ -506,6 +515,19 @@ footer .green {
 
 @media screen and (max-width: 992px) {
 
+  header {
+    padding: 20px 50px;
+  }
+
+  header i,
+  header .bx.bx-menu.bx-lg {
+  display: block;
+}
+
+  main {
+    padding: 0 30px;
+  }
+
   .card-container-header,
   .card-container,
   .call-to-action div,
@@ -514,7 +536,7 @@ footer .green {
   }
 
   .card-container-header {
-    padding: 20px 60px;
+    padding: 20px;
     gap: 20px;
   }
 
@@ -526,8 +548,34 @@ footer .green {
     width: 100%;
   }
 
+  .add-ons {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    padding: 20px 40px;
+  }
+
+  .add-ons h3 {
+    font-size: 1.8rem;
+  }
+
+  .add-ons p {
+    font-size: 1.4rem;
+  }
+
+  .add-ons span {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .add-ons strong {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    color: var(--gray);
+  }
+
   .call-to-action div h2 {
-    margin-bottom: 20px ;
+    margin-bottom: 20px;
+    text-align: center;
   }
 
   .faq-section details {
@@ -535,12 +583,68 @@ footer .green {
   }
 
   footer {
-    padding: 50px 100px;
+    padding: 10px 30px;
   }
 
   .footer-left h2, .footer-middle h2, .footer-right h2 {
     margin-top: 24px;
   }
+
+  header nav,
+  .login-container,
+  .blue-shape {
+    display: none;
+  }
+
+  /* nav,
+  .login-container,
+  .nav.show {
+    display: block;
+  } */
+
+  /* header {
+    display: initial;
+  }
+
+  header nav,
+  header nav ul,
+  .login-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header nav {
+    height: 6249px;
+    background: var(--white);
+  }
+
+  header nav, header nav ul, .login-container {
+    gap: 40px
+  }
+
+  .nav li {
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--gray);
+  }
+
+  .login-container ul {
+    gap: 10px;
+  }
+
+  .login-container a {
+    display: block;
+    text-align: center;
+  }
+
+  .login-container .btn-fill {
+    margin-left: initial;
+  }
+
+  .first-level-dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  } */
 }
 
 /* HIDE */
